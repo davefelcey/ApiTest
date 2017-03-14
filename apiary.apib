@@ -1,0 +1,23 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# TestAccount
+
+Gets account details
+
+## Account [/account/{account_id}]
+
++ Parameters
+    + account_id (number) - ID of the account in the form of an integer
+
+### View a Account Detail [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "my account",
+                "number": "1237635673",
+                "type": "simple"
+            }
+        ]
